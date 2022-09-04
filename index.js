@@ -1,5 +1,3 @@
-console.log("hello");
-
 const layerOne = document.querySelector("#layer.one");
 const layerTwo = document.querySelector("#layer.two");
 const dropdown = document.getElementById("dropdown");
