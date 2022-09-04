@@ -14,6 +14,16 @@
   src: url(./fonts/Proxima\ Nova\ Font.otf);
 }
 
+@font-face {
+  font-family: SGB;
+  src: url(./fonts/spacegrotesk/SpaceGrotesk-Bold.otf);
+}
+
+@font-face {
+  font-family: SGL;
+  src: url(./fonts/spacegrotesk/SpaceGrotesk-Light.otf);
+}
+
 
 body {
   margin: 0;
@@ -40,7 +50,7 @@ video {
 }
 
 #video-box {
-  height: 700px;
+  height: 600px;
   overflow: hidden;
   position: relative;
 }
@@ -74,20 +84,27 @@ video {
 }
 
 #video-name {
-  font-size: 5rem;
+  font-size: 2.5rem;
   color: white;
   width: fit-content;
   text-align: center;
-  font-style: italic;
-  font-family: Montserrat;
-  text-shadow: 0px 0px 10px;
+  font-family: SGB;
   z-index: 101;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 28rem;
+  left: 1rem;
+  top: 10rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+#letsPlay {
+  font-size: 1.5rem;
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-family: SGL;
 }
 
 
@@ -151,14 +168,6 @@ p {
   padding: 2rem 25rem;
 }
 
-@media (max-width: 1000px) {
-  #content-box {
-    padding: 2rem 1rem;
-  }
-  #imgheader {
-    padding: 0rem 1rem;
-  }
-}
 
 ul, ol {
   display: flex;
