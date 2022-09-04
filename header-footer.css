@@ -1,0 +1,95 @@
+@font-face {
+  font-family: Montserrat L;
+  src: url(./fonts/Montserrat-Light.otf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Medium.otf);
+}
+@font-face {
+  font-family: Proxima;
+  src: url(./fonts/Proxima\ Nova\ Font.otf);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+#logo {
+  width: 120px;
+  margin: 0;
+}
+
+header, footer {
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+header {
+  padding: 0.5rem;
+  height: 100px;
+  display: flex;
+  width: min(1200px, 100%);
+  align-self: center;
+}
+footer {
+  flex-direction: column;
+}
+
+#logos {
+  display: flex;
+  align-items: center;
+}
+#logos > img {
+  transition: 0.4s;
+}
+#logos > img:hover {
+  transform: translateY(-5px);
+}
+
+.companyname {
+  font-family: Montserrat;
+  font-weight: 900;
+}
+
+.companyname.header {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.companyname.header > img {
+  width: 3rem;
+}
+
+.companyname.footer {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+button {
+  background: none;
+  border: none;  
+}
+
+#menu-open {
+  background-color: black;
+  border-radius: 100rem;
+  padding: 0.6rem;
+  transition: 0.2s;
+  animation: ease-in-out;
+  z-index: 995;
+  width: 2rem;
+  margin-left: auto;
+}
+#menu-open:hover {
+  transform: scale(1.2);
+}
+#menu-open:active {
+  transform: scale(0.8);
+}
