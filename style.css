@@ -92,13 +92,13 @@ video {
   z-index: 101;
   position: absolute;
   left: 1rem;
-  top: 10rem;
+  top: 13rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 #letsPlay {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: black;
   background-color: white;
   border: 1px solid white;
