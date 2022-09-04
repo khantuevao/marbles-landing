@@ -17,15 +17,15 @@
 }
 
 #close {
-  margin-left: 8rem;
-  margin-top: 8rem;
   transition: 0.2s;
+  margin-top: 1rem;
 }
 #menu-close {
   transform: scale(0);
   transition: 0.4s;
   transition-delay: 0s;
   opacity: 0;
+  
 }
 #menu-close.visible {
   transform: scale(1);
@@ -41,7 +41,6 @@
   position: fixed;
   width: 40rem;
   height: 40rem;
-  border-bottom-left-radius: 50rem;
   right: 0;
   transform: translateY(-40rem);
   display: flex;
@@ -62,7 +61,7 @@
 #layer.two.visible, #layer.one.visible {
   position: fixed;
   width: 40rem;
-  height: 40rem;
+  height: 28rem;
   transform: translateX(0rem);
   transform: translateY(0rem);
   z-index: 998;
@@ -79,6 +78,10 @@
   margin-left: 8rem;
   font-size: 1.8rem;
   width: fit-content;
+}
+#dropdown > div:last-child {
+  margin-left: 23rem;
+
 }
 #dropdown {
   visibility: hidden;
