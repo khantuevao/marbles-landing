@@ -48,6 +48,7 @@ video {
   overflow: hidden;
   position: relative;
   z-index: 100;
+  display: flex;
 }
 
 #video-name {
@@ -57,10 +58,13 @@ video {
   text-align: center;
   font-family: SGB;
   position: absolute;
-  left: 1rem;
+  left: 0;
+  right: 0;
   top: 8rem;
   margin-left: auto;
   margin-right: auto;
+  align-self: center;
+  justify-self: center;
 }
 
 #letsPlay {
