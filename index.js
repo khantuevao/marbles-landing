@@ -6,6 +6,7 @@ const links = document.getElementsByClassName("link");
 
 const menuOpen = document.getElementById("menu-open");
 menuOpen.addEventListener("click", () => {
+  menuOpen.classList.add('small')
   layerOne.classList.add("visible");
   layerTwo.classList.add("visible");
   dropdown.classList.add("visible");
@@ -19,6 +20,7 @@ const menuClose = document.getElementById("menu-close");
 menuClose.addEventListener("click", () => {
   layerOne.classList.remove("visible");
   layerTwo.classList.remove("visible");
+  menuOpen.classList.remove('small')
 
   dropdown.classList.remove("visible");
   menuOpen.classList.remove("hidden");
@@ -30,8 +32,9 @@ menuClose.addEventListener("click", () => {
 
 document.onclick = function(e){
   if (e.target.id !== 'layer' && e.target.id !== 'menu-close' && e.target.id !== 'menu-open' && e.target.id !== 'dropdown') {
-    layerOne.classList.remove("visible");
+  layerOne.classList.remove("visible");
   layerTwo.classList.remove("visible");
+  menuOpen.classList.remove('small')
 
   dropdown.classList.remove("visible");
   menuOpen.classList.remove("hidden");
