@@ -174,3 +174,100 @@ li > div:last-child {
   font-family: SGL;
   font-size: 1.2rem;
 }
+
+@media (min-width: 1200px) {
+ #outer-box {
+    height: 52rem;
+    overflow: hidden;
+ }
+
+ #video-box {
+    width: 100%;
+    height: auto;
+ }
+
+  #video-box > video {
+    width: inherit;
+  }
+
+  #video-overlay1 {
+    height: 120px;
+    top: 60rem;
+  
+  }
+  #video-overlay2 {
+    height: 120px;
+    top: 60rem;
+  }
+
+  #video-name {
+    font-size: 4rem;
+    top: 10rem;
+  }
+
+  #letsPlay {
+    font-size: 1.8rem;
+    border-radius: 5rem;
+    padding: 1rem 4rem;
+    background-color: black;
+    color: white;
+    border-color: black;
+  }
+  #letsPlay:hover {
+    color: #a3e635;
+    border-color: #a3e635;
+  }
+
+  #overview, #advantages, #utilities, #roadmap {
+    padding: 8rem 12rem;
+  }
+
+  #overview > div, #advantages > div {
+    font-family: SGB;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  #overview > p {
+    font-size: 1.6rem;
+    font-family: SGL;
+  }
+
+  li > div:first-child {
+    font-size: 1.8rem;
+    font-family: SGB;
+  }
+  li > div:last-child {
+    font-family: SGL;
+    font-size: 1.6rem;
+  }
+
+  #utilities > div {
+    font-size: 4rem;
+    font-family: SGB;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  #utilities > p {
+    font-family: SGB;
+    font-size: 1.6rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  #roadmap > div:first-child {
+    font-size: 4rem;
+    font-family: SGB;
+    margin-bottom: 2rem;
+  }
+  #roadmap > div {
+    font-size: 1.8rem;
+    font-family: SGB;
+  }
+  #roadmap > p {
+    font-family: SGL;
+    font-size: 1.6rem;
+  }
+}
