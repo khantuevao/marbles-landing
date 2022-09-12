@@ -80,7 +80,7 @@ video {
 #video-overlay1 {
   height: 120px;
   position: absolute;
-  top: 48rem;
+  top: 47rem;
   width: 100%;
   box-shadow: 180px -50px  50px black;
   z-index: 101;
@@ -88,7 +88,7 @@ video {
 #video-overlay2 {
   height: 120px;
   position: absolute;
-  top: 48rem;
+  top: 47rem;
   width: 100%;
   box-shadow: -180px -50px  50px black;
   z-index: 101;
@@ -98,6 +98,7 @@ video {
   z-index: 105;
   color: white;
   padding: 0 2rem 2rem;
+  margin-top: 1rem;
 }
 
 #overview > div {
@@ -175,6 +176,17 @@ li > div:last-child {
   font-size: 1.2rem;
 }
 
+#letsPlay {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+#letsPlay:hover {
+  
+  color: #a3e635;
+  border-color: #a3e635;
+}
+
 @media (min-width: 1200px) {
  #outer-box {
     height: 52rem;
@@ -214,6 +226,7 @@ li > div:last-child {
     border-color: black;
   }
   #letsPlay:hover {
+    
     color: #a3e635;
     border-color: #a3e635;
   }

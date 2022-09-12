@@ -5,23 +5,37 @@
 
 @media (max-width: 1200px) {
   #menu-open {
-    position: fixed;
-    background-color: black;
-    border-radius: 100rem;
-    padding: 0.2rem;
-    top: 1.7rem;
-    right: 1rem;
+    
     transition: 0.2s;
     animation: ease-in-out;
     z-index: 995;
-    transform: scale(1.6);
     transition-delay: 0.7s;
-  
+
   }
   #menu-open.small {
     transform: scale(0);
     transition-delay: 0s;
   
+  }
+
+  #menu-open-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 100rem;
+    background-color: black;
+    transform: scale(1.4);
+    border: 1px solid black;
+    z-index: 995;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  #menu-open-div:hover {
+    border: 1px solid white;
   }
   
   #close {
@@ -122,10 +136,15 @@
   .link > a {
     text-decoration: none;
     color: white;
+    border: 1px solid black;
+
   }
   .link.visible {
     top: 0;
     opacity: 1;
+  }
+  .link > a:hover {
+    border-bottom: 1px solid white;
   }
   
   .menu-link {
