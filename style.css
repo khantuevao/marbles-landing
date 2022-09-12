@@ -24,6 +24,10 @@
   src: url(./fonts/spacegrotesk/SpaceGrotesk-Light.otf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   display: flex;
