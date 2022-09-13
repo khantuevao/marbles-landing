@@ -14,9 +14,13 @@
 }
 
 
+
 body {
   margin: 0;
   background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -118,8 +122,6 @@ header {
 
 }
 
-.tournament {
-}
 
 .head {
   font-family: SGB;
@@ -156,12 +158,22 @@ footer {
   align-items: center;
   font-family: SGB;
   border-top: 1px solid #1c1917;
-  margin-top: 1rem;
+  margin-top: auto;
 }
 
 footer > a {
   text-decoration: none;
   color: white;
+}
+
+footer > button {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-family: SGB;
 }
 
 
