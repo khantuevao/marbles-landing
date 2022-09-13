@@ -1,0 +1,178 @@
+@font-face {
+  font-family: SGB;
+  src: url(./fonts/spacegrotesk/SpaceGrotesk-Bold.otf);
+}
+
+@font-face {
+  font-family: SGL;
+  src: url(./fonts/spacegrotesk/SpaceGrotesk-Light.otf);
+}
+
+@font-face {
+  font-family: SGM;
+  src: url(./fonts/spacegrotesk/SpaceGrotesk-Medium.otf);
+}
+
+body {
+  margin: 0;
+  background-color: #1c1917;
+}
+
+header {
+  gap: 0.5rem;
+  align-items: center;
+
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  border-bottom: 1px solid #292524;
+}
+
+#logos {
+  display: flex;
+  align-items: center;
+}
+#logos > img {
+  transition: 0.4s;
+}
+#logos > img:hover {
+  transform: translateY(-5px);
+}
+
+.companyname {
+  font-family: SGB;
+  font-weight: 900;
+}
+
+.companyname.header {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0rem;
+  font-family: SGB;
+}
+
+.companyname.header > img {
+  width: 3rem;
+  border-radius: 10rem;
+}
+
+
+#container {
+  padding: 1rem;
+}
+
+#links {
+  display: flex;
+  gap: 0.5rem;
+}
+#links > button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  font-family: SGM;
+  background-color: #292524;
+  color: #fafaf9;
+}
+#links > button:last-child {
+  background-color: #fafaf9;
+}
+#links>button>a {
+  text-decoration: none;
+  color: #fafaf9;
+  font-size: 1rem;
+}
+#links>button:last-child>a {
+  color: #1c1917
+}
+
+.tabName {
+  font-size: 2rem;
+  font-family: SGB;
+  margin-top: 1rem;
+}
+
+.content {
+  background-color: #292524;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+
+.head, .tournament {
+  display: flex;
+  padding: 0.5rem;
+  font-family: SGL;
+}
+.head > a, .tournament > div {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+
+}
+
+.tournament {
+}
+
+.head {
+  font-family: SGB;
+  font-weight: 900;
+}
+
+
+.title {
+  width: 10rem;
+}
+.fund, .buyin {
+  width: 4rem;
+  font-size: 0.8rem;
+  border-left: none;
+}
+
+#title {
+  width: 10rem;
+}
+#fund, #buyin {
+  width: 4rem;
+}
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  .companyname.header {
+    font-size: 1.8rem;
+  }
+
+  .companyname.header > img {
+    width: 4.5rem;
+    border-radius: 10rem;
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    height: 6rem;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+img {
+  width: 2rem;
+  margin: 0 0.5rem;
+}
+
+#container {
+  height: 500px;
+  color: #fafaf9;
+}

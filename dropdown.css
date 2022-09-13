@@ -32,10 +32,12 @@
     z-index: 995;
     height: 3rem;
     width: 3rem;
+    transition: 0.2s;
   }
 
   #menu-open-div:hover {
-    border: 1px solid white;
+    transform: scale(1.5);
+
   }
   
   #close {

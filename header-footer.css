@@ -1,17 +1,4 @@
 @font-face {
-  font-family: Montserrat L;
-  src: url(./fonts/Montserrat-Light.otf);
-}
-@font-face {
-  font-family: Montserrat;
-  src: url(./fonts/Montserrat-Medium.otf);
-}
-@font-face {
-  font-family: Proxima;
-  src: url(./fonts/Proxima\ Nova\ Font.otf);
-}
-
-@font-face {
   font-family: SGB;
   src: url(./fonts/spacegrotesk/SpaceGrotesk-Bold.otf);
 }
