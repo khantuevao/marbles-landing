@@ -16,7 +16,7 @@
 
 body {
   margin: 0;
-  background-color: #1c1917;
+  background-color: black;
 }
 
 header {
@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-self: flex-start;
-  border-bottom: 1px solid #292524;
+  border-bottom: 1px solid #1c1917;
 }
 
 #logos {
@@ -73,7 +73,7 @@ header {
   border-radius: 0.5rem;
   padding: 0.5rem 0.8rem;
   font-family: SGM;
-  background-color: #292524;
+  background-color: #1c1917;
   color: #fafaf9;
 }
 #links > button:last-child {
@@ -85,7 +85,7 @@ header {
   font-size: 1rem;
 }
 #links>button:last-child>a {
-  color: #1c1917
+  color: black
 }
 
 .tabName {
@@ -95,7 +95,7 @@ header {
 }
 
 .content {
-  background-color: #292524;
+  background-color: #1c1917;
   border-radius: 1rem;
   margin-top: 1rem;
   display: flex;
@@ -147,7 +147,7 @@ footer {
   padding: 0.5rem 0;
   height: 2rem;
   color: white;
-  background-color: #1c1917;
+  background-color: black;
   margin-top: auto;
   position: sticky;
   bottom: 0px;
@@ -155,7 +155,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   font-family: SGB;
-  border-top: 1px solid #292524;
+  border-top: 1px solid #1c1917;
   margin-top: 1rem;
 }
 
