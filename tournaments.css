@@ -54,7 +54,7 @@ header {
   font-family: SGB;
 }
 
-.companyname.header > img {
+.companyname.header > a > img {
   width: 3rem;
   border-radius: 10rem;
 }
