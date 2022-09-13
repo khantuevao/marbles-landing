@@ -13,6 +13,7 @@
   src: url(./fonts/spacegrotesk/SpaceGrotesk-Medium.otf);
 }
 
+
 body {
   margin: 0;
   background-color: #1c1917;
@@ -142,6 +143,27 @@ header {
   width: 4rem;
 }
 
+footer {
+  padding: 0.5rem 0;
+  height: 2rem;
+  color: white;
+  background-color: #1c1917;
+  margin-top: auto;
+  position: sticky;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: SGB;
+  border-top: 1px solid #292524;
+  margin-top: 1rem;
+}
+
+footer > a {
+  text-decoration: none;
+  color: white;
+}
+
 
 
 
@@ -173,6 +195,5 @@ img {
 }
 
 #container {
-  height: 500px;
   color: #fafaf9;
 }
