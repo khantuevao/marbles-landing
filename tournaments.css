@@ -21,6 +21,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 header {
@@ -30,7 +31,7 @@ header {
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
-  align-self: flex-start;
+  align-content: center;
   border-bottom: 1px solid #1c1917;
 }
 
@@ -66,6 +67,7 @@ header {
 
 #container {
   padding: 1rem;
+  padding-bottom: 6rem;
 }
 
 #links {
@@ -151,8 +153,10 @@ footer {
   color: white;
   background-color: black;
   margin-top: auto;
-  position: sticky;
-  bottom: 0px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
