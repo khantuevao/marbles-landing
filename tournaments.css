@@ -27,12 +27,14 @@ body {
 header {
   gap: 0.5rem;
   align-items: center;
-
+  position: sticky;
+  top: 0px;
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-content: center;
   border-bottom: 1px solid #292524;
+  background-color: black;
 }
 
 #logos {
