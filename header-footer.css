@@ -8,13 +8,21 @@
   src: url(./fonts/spacegrotesk/SpaceGrotesk-Light.otf);
 }
 
+body {
+  position: relative;
+}
+
 header, footer {
   color: white;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  width: auto;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  background-color: black;
 }
 header {
   padding: 0 0.5rem;

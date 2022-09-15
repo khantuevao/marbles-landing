@@ -35,6 +35,7 @@ body {
   background-color: black;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 
@@ -184,11 +185,12 @@ li > div:last-child {
   background-color: black;
   color: white;
   border-color: black;
+  opacity: 70%;
 }
 #letsPlay:hover {
   
-  color: #a3e635;
-  border-color: #a3e635;
+  color: white;
+  border-color: white;
 }
 
 @media (min-width: 1200px) {
@@ -229,11 +231,7 @@ li > div:last-child {
     color: white;
     border-color: black;
   }
-  #letsPlay:hover {
-    
-    color: #a3e635;
-    border-color: #a3e635;
-  }
+  
 
   #overview, #advantages, #utilities, #roadmap {
     padding: 8rem 12rem;
