@@ -115,7 +115,7 @@ body {
   height: 40px;
   border: 2px solid rgb(24, 24, 24);
   border-radius: 10px;
-  background: rgb(45, 45, 45);
+  background: #292524;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +132,7 @@ body {
 
 #register {
   background-color: rgb(253, 253, 253);
-  color: rgb(53, 52, 52);
+  color: #292524;
   margin-bottom: 0;
 }
 
@@ -208,7 +208,7 @@ label {
 }
 
 input {
-  background-color: rgb(29, 28, 28);
+  background-color: black;
   padding: 15px;
   border: 0.1px solid rgb(63, 61, 61);
   border-radius: 7px;
