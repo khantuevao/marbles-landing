@@ -143,14 +143,14 @@ body {
 
 .image2 {
   width: auto;
-  height: 30px;
+  height: 25px;
   padding: 10px;
   margin-left: 0px;
 }
 
 .image3 {
   width: auto;
-  height: 30px;
+  height: 25px;
   margin-left: 0px;
 }
 
@@ -273,14 +273,6 @@ input {
     width: auto;
   }
 
-  .image1 {
-    height: 20px;
-  }
-
-  .image2, .image3 {
-    height: 25px;
-  }
-
   footer {
     padding: 0.5rem 0;
     height: 2rem;
@@ -303,7 +295,8 @@ input {
     text-decoration: none;
   }
   
-  footer > button, form > button {
+  footer > a {
+    text-decoration: none;
     background-color: black;
     color: #fafaf9;
     border: none;
@@ -316,11 +309,7 @@ input {
     width: 4rem;
   }
   
-  footer > form {
-    background-color: black;
-  }
-  
-  button > div:first-child {
+  a > div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,7 +318,5 @@ input {
 
   .email, .password, .username {
     width: min(90vw, 405px);
-
   }
-  
 }

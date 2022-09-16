@@ -54,6 +54,7 @@ header {
   display: flex;
   gap: 0.5rem;
 }
+
 #links > button {
   border: none;
   border-radius: 0.5rem;
@@ -119,6 +120,7 @@ header {
   "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
   sans-serif;
   font-weight: 500;
+  font-size: 1rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -129,20 +131,20 @@ header {
 
 .image1 {
   width: auto;
-  height: 25px;
+  height: 20px;
   margin-left: 0px;
 }
 
 .image2 {
   width: auto;
-  height: 30px;
+  height: 25px;
   padding: 10px;
   margin-left: 0px;
 }
 
 .image3 {
   width: auto;
-  height: 30px;
+  height: 25px;
   margin-left: 0px;
 }
 
@@ -180,7 +182,7 @@ a {
   border-top: 1px solid rgb(50, 50, 50);
   width: 400px;
   margin-top: 10px;
-  font-size: small;
+  font-size: 1rem;
   align-self: center;
 }
 
@@ -225,14 +227,6 @@ body {
     width: auto;
   }
 
-  .image1 {
-    height: 20px;
-  }
-
-  .image2, .image3 {
-    height: 25px;
-  }
-
   .headerbox {
     margin-top: 0;  
   }
@@ -257,9 +251,6 @@ body {
   
   footer > a {
     text-decoration: none;
-  }
-  
-  footer > button, form > button {
     background-color: black;
     color: #fafaf9;
     border: none;
@@ -272,11 +263,7 @@ body {
     width: 4rem;
   }
   
-  footer > form {
-    background-color: black;
-  }
-  
-  button > div:first-child {
+  a > div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
