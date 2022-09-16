@@ -76,7 +76,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Space-Grotesk", sans-serif;
+  font-family: SGB;
   padding: 30px;
   margin-top: 300px;
 
@@ -85,13 +85,13 @@
 a {
   color: white;
   font-weight: 400;
-  font-family: "Space-Grotesk", sans-serif;
+  font-family: SGL;
 }
 
 .linktext {
   color: darkgray;
   padding: 10px;
-  font-family: "Space-Grotesk", sans-serif;
+  font-family: SGL;
 }
 
 .bottomlinks {
@@ -102,27 +102,83 @@ a {
   width: 400px;
   margin-top: 10px;
   font-size: small;
+  align-self: center;
 }
 
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: relative;
   margin: 0;
   padding: 0;
   background-color: black;
 }
 
+header {
+  gap: 0.5rem;
+  align-items: center;
+  top: 0px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid #292524;
+  background-color: black;
+  margin: 0;
+}
+
+#links {
+  display: flex;
+  gap: 0.5rem;
+}
+#links > button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #292524;
+  color: #fafaf9;
+}
+#links > button:last-child {
+  background-color: #fafaf9;
+}
+#links>button>a {
+  text-decoration: none;
+  color: #fafaf9;
+  font-size: 1rem;
+  font-family: SGM;
+
+}
+#links>button:last-child>a {
+  color: black
+}
+
+.companyname {
+  font-family: SGB;
+  font-weight: 900;
+}
+
+.companyname.header {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0rem;
+  font-family: SGB;
+}
+
+.companyname.header > a > img {
+  width: 3rem;
+  border-radius: 10rem;
+}
+
 @media (max-width: 1200px) {
   .button {
-    width: 90vw;
+    width: min(90vw, 400px);
     font-size: 1rem;
   }
 
   .bottomlinks {
-    width: 90vw;
+    width: min(90vw, 400px);
     font-size: 1rem;
   }
 
@@ -148,8 +204,7 @@ body {
     align-content: center;
     border-bottom: 1px solid #292524;
     background-color: black;
-    margin: 0;
-    width: 92vw;
+    margin: 0;  
   }
 
   #links {
@@ -159,7 +214,7 @@ body {
   #links > button {
     border: none;
     border-radius: 0.5rem;
-    padding: 0.6rem 0.8rem;
+    padding: 0.5rem 0.8rem;
     font-family: SGM;
     background-color: #292524;
     color: #fafaf9;
