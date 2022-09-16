@@ -1,5 +1,16 @@
-.body {
-  background-color: black;
+@font-face {
+  font-family: SGB;
+  src: url(./fonts/spacegrotesk/SpaceGrotesk-Bold.otf);
+}
+
+@font-face {
+  font-family: SGL;
+  src: url(./fonts/spacegrotesk/SpaceGrotesk-Light.otf);
+}
+
+@font-face {
+  font-family: SGM;
+  src: url(./fonts/spacegrotesk/SpaceGrotesk-Medium.otf);
 }
 
 .container0 {
@@ -17,17 +28,15 @@
   text-decoration: none;
   width: 400px;
   height: 40px;
-  border: 2px solid rgb(24, 24, 24);
+  border: #292524;
   border-radius: 10px;
-  background: rgb(45, 45, 45);
+  background: #292524;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
   margin-bottom: 10px;
-  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: SGB;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
 }
@@ -69,6 +78,8 @@
   align-items: center;
   font-family: "Space-Grotesk", sans-serif;
   padding: 30px;
+  margin-top: 300px;
+
 }
 
 a {
@@ -96,7 +107,95 @@ a {
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  margin-top: 300px;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+@media (max-width: 1200px) {
+  .button {
+    width: 90vw;
+    font-size: 1rem;
+  }
+
+  .bottomlinks {
+    width: 90vw;
+    font-size: 1rem;
+  }
+
+  .container0 {
+    width: auto;
+  }
+
+  .image1 {
+    height: 20px;
+  }
+
+  .image2, .image3 {
+    height: 25px;
+  }
+
+  header {
+    gap: 0.5rem;
+    align-items: center;
+    top: 0px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #292524;
+    background-color: black;
+    margin: 0;
+    width: 92vw;
+  }
+
+  #links {
+    display: flex;
+    gap: 0.5rem;
+  }
+  #links > button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    font-family: SGM;
+    background-color: #292524;
+    color: #fafaf9;
+  }
+  #links > button:last-child {
+    background-color: #fafaf9;
+  }
+  #links>button>a {
+    text-decoration: none;
+    color: #fafaf9;
+    font-size: 1rem;
+  }
+  #links>button:last-child>a {
+    color: black
+  }
+
+  .companyname {
+    font-family: SGB;
+    font-weight: 900;
+  }
+  
+  .companyname.header {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0rem;
+    font-family: SGB;
+  }
+  
+  .companyname.header > a > img {
+    width: 3rem;
+    border-radius: 10rem;
+  }
+
+  .headerbox {
+    margin-top: 200px;
+  }
+  
 }
