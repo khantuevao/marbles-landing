@@ -171,6 +171,52 @@ header {
   border-radius: 10rem;
 }
 
+footer {
+  padding: 0.5rem 0;
+  height: 2rem;
+  color: #fafaf9;
+  background-color: black;
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: SGB;
+  border-top: 1px solid #292524;
+  margin-top: auto;
+}
+
+footer > a {
+  text-decoration: none;
+}
+
+footer > button, form > button {
+  background-color: black;
+  color: #fafaf9;
+  border: none;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: SGL;
+  width: 4rem;
+}
+
+footer > form {
+  background-color: black;
+}
+
+button > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+}
+
 @media (max-width: 1200px) {
   .button {
     width: min(90vw, 400px);
@@ -250,7 +296,6 @@ header {
   }
 
   .headerbox {
-    margin-top: 200px;
+    margin-top: 50%;
   }
-  
 }
