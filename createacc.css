@@ -13,11 +13,83 @@
   src: url(./fonts/spacegrotesk/SpaceGrotesk-Medium.otf);
 }
 
-@media (min-width: 1200px) {
-  header, footer {
+@media (min-width: 1000px) {
+  footer {
     display: none;
   }
 }
+
+header {
+  gap: 0.5rem;
+  align-items: center;
+  top: 0px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid #292524;
+  background-color: black;
+  margin: 0;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#left-links {
+  display: flex;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+#left-links > a {
+  text-decoration: none;
+  font-family: SGM;
+  font-size: 1rem;
+}
+
+#links {
+  display: flex;
+  gap: 0.5rem;
+}
+#links > button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #292524;
+  color: #fafaf9;
+}
+#links > button:last-child {
+  background-color: #fafaf9;
+}
+#links>button>a {
+  text-decoration: none;
+  color: #fafaf9;
+  font-size: 1rem;
+  font-family: SGM;
+}
+#links>button:last-child>a {
+  color: black
+}
+
+.companyname {
+  font-family: SGB;
+  font-weight: 900;
+}
+
+.companyname.header {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0rem;
+  font-family: SGB;
+}
+
+.companyname.header > a > img {
+  width: 3rem;
+  border-radius: 10rem;
+}
+
 
 body {
   background-color: black;
@@ -49,11 +121,13 @@ body {
   align-items: center;
   padding: 5px;
   margin-bottom: 10px;
-  font-family: SGB, system-ui, -apple-system, BlinkMacSystemFont,
+  font-family: SGM, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+
 }
 
 #register {
@@ -114,7 +188,8 @@ a {
   border-top: 1px solid rgb(50, 50, 50);
   width: 400px;
   margin-top: 10px;
-  font-size: small;
+  font-size: 1rem;
+
 }
 
 body {
@@ -181,15 +256,17 @@ input {
   font-family: SGL;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
+  #left-links {
+    display: none;
+  }
+
   .button {
     width: min(90vw, 400px);
-    font-size: 1rem;
   }
 
   .bottomlinks {
     width: min(90vw, 400px);
-    font-size: 1rem;
   }
 
   .container0 {
@@ -204,66 +281,6 @@ input {
     height: 25px;
   }
 
-  header {
-    gap: 0.5rem;
-    align-items: center;
-    top: 0px;
-    padding: 0.5rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    border-bottom: 1px solid #292524;
-    background-color: black;
-    margin: 0;  
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  #links {
-    display: flex;
-    gap: 0.5rem;
-  }
-  #links > button {
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 0.8rem;
-    background-color: #292524;
-    color: #fafaf9;
-  }
-  #links > button:last-child {
-    background-color: #fafaf9;
-  }
-  #links>button>a {
-    text-decoration: none;
-    color: #fafaf9;
-    font-size: 1rem;
-    font-family: SGB;
-
-  }
-  #links>button:last-child>a {
-    color: black
-  }
-
-  .companyname {
-    font-family: SGB;
-    font-weight: 900;
-  }
-  
-  .companyname.header {
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    padding-left: 0rem;
-    font-family: SGB;
-  }
-  
-  .companyname.header > a > img {
-    width: 3rem;
-    border-radius: 10rem;
-  }
-
   footer {
     padding: 0.5rem 0;
     height: 2rem;
@@ -274,7 +291,8 @@ input {
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: max(2rem, 10vw);
     align-items: center;
     font-family: SGB;
     border-top: 1px solid #292524;
