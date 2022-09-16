@@ -229,7 +229,6 @@ input {
     border: none;
     border-radius: 0.5rem;
     padding: 0.5rem 0.8rem;
-    font-family: SGM;
     background-color: #292524;
     color: #fafaf9;
   }
@@ -240,6 +239,8 @@ input {
     text-decoration: none;
     color: #fafaf9;
     font-size: 1rem;
+    font-family: SGB;
+
   }
   #links>button:last-child>a {
     color: black
