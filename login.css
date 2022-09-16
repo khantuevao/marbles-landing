@@ -1,0 +1,102 @@
+.body {
+  background-color: black;
+}
+
+.container0 {
+  width: 500px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: dashed;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  width: 400px;
+  height: 40px;
+  border: 2px solid rgb(24, 24, 24);
+  border-radius: 10px;
+  background: rgb(45, 45, 45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.glow-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(213, 209, 215, 0.4);
+}
+
+.image1 {
+  width: auto;
+  height: 25px;
+  margin-left: 0px;
+}
+
+.image2 {
+  width: auto;
+  height: 30px;
+  padding: 10px;
+  margin-left: 0px;
+}
+
+.image3 {
+  width: auto;
+  height: 30px;
+  margin-left: 0px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space-Grotesk", sans-serif;
+  padding: 30px;
+}
+
+a {
+  color: white;
+  font-weight: 400;
+  font-family: "Space-Grotesk", sans-serif;
+}
+
+.linktext {
+  color: darkgray;
+  padding: 10px;
+  font-family: "Space-Grotesk", sans-serif;
+}
+
+.bottomlinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(50, 50, 50);
+  width: 400px;
+  margin-top: 10px;
+  font-size: small;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+}
