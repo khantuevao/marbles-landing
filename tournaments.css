@@ -13,6 +13,10 @@
   src: url(./fonts/spacegrotesk/SpaceGrotesk-Medium.otf);
 }
 
+#left-links {
+  display: none;
+}
+
 
 body {
   margin: 0;
@@ -170,7 +174,7 @@ footer > a {
   text-decoration: none;
 }
 
-footer > button, form > button {
+footer > a {
   background-color: black;
   color: #fafaf9;
   border: none;
@@ -183,11 +187,8 @@ footer > button, form > button {
   width: 4rem;
 }
 
-footer > form {
-  background-color: black;
-}
 
-button > div:first-child {
+a > div:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,22 +201,82 @@ button > div:first-child {
 
 
 
-@media (min-width: 1200px) {
-  .companyname.header {
-    font-size: 1.8rem;
-  }
-
-  .companyname.header > img {
-    width: 4.5rem;
-    border-radius: 10rem;
+@media (min-width: 1000px) {
+  footer {
+    display: none;
   }
 
   header {
+    gap: 0.5rem;
+    align-items: center;
+    top: 0px;
+    padding: 0.5rem 1rem;
     display: flex;
-    width: 100%;
-    height: 6rem;
     justify-content: space-between;
-    padding: 0;
+    align-content: center;
+    border-bottom: 1px solid #292524;
+    background-color: black;
+    margin: 0;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #left-links {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+  }
+  
+  #left-links > a {
+    text-decoration: none;
+    font-family: SGM;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  #links {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  #links > button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    background-color: #292524;
+    color: #fafaf9;
+  }
+  #links > button:last-child {
+    background-color: #fafaf9;
+  }
+  #links>button>a {
+    text-decoration: none;
+    color: #fafaf9;
+    font-size: 1rem;
+    font-family: SGM;
+  }
+  #links>button:last-child>a {
+    color: black
+  }
+  
+  .companyname {
+    font-family: SGB;
+    font-weight: 900;
+  }
+  
+  .companyname.header {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0rem;
+    font-family: SGB;
+  }
+  
+  .companyname.header > a > img {
+    width: 3rem;
+    border-radius: 10rem;
   }
 }
 
