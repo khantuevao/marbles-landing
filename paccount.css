@@ -63,6 +63,12 @@ header {
   font-family: SGB;
 }
 
+.companyname.header > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .companyname.header > a > img {
   width: 3rem;
   border-radius: 10rem;
@@ -278,10 +284,7 @@ a > div:first-child {
   }
 }
 
-img {
-  width: 2rem;
-  margin: 0 0.5rem;
-}
+
 
 #container {
   color: #fafaf9;
@@ -291,6 +294,8 @@ img {
 #wallet {
   display: flex;
   color: white;
+  align-self: center;
+  margin-top: 2rem;
 }
 
 #funds {
@@ -341,14 +346,15 @@ img {
 #live {
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
-  margin-top: 1rem;
+  padding: 0 1rem;
+  margin-top: 2rem;
+  font-family: SGL;
 }
 
 #winnings, #winners, #practice {
   background-color: #292524;
   height: 5rem;
-  width: 20%;
+  width: max(7rem, 10%);
   color: white;
   display: flex;
   flex-direction: column;
@@ -383,6 +389,16 @@ img {
 #amenu > div {
   display: flex;
   align-items: center;
-  font-family: SGM;
+  font-family: SGL;
   gap: 0.5rem;
+  border-bottom: 1px solid #292524;
+  width: fit-content;
+}
+
+#amenu > div:hover {
+  border-bottom: 1px solid white;
+}
+
+#aname {
+  font-family: SGL;
 }
