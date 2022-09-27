@@ -191,7 +191,7 @@ function winnersEvent(event) {
     <div class="content">
       <div class="head">
         <a href="" id="title">Player</a>
-        <a href="" id="fund">Registered</a>
+        <a href="" id="fund">Since</a>
         <a href="" id="buyin">Total </a>
       </div>
       <div class="tournament">
@@ -222,14 +222,13 @@ function winnersEvent(event) {
 const amenu = document.getElementById('amenu')
 
 const aname = document.getElementById('aname')
-aname.addEventListener('click', (event) => {
-  if (amenu.classList[0] === 'visible') {
-    amenu.classList.remove('visible')
+aname.addEventListener('click', () => {
+  if (amenu.classList[0] === 'active') {
+    aname.classList.remove('active')
+    amenu.classList.remove('active')
   } else {
-    amenu.classList.add('visible')
+    aname.classList.add('active')
+    amenu.classList.add('active')
   }
-
-
-  event.preventDefault()
 })
 

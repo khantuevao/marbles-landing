@@ -135,6 +135,8 @@ header {
 }
 
 
+
+
 .head {
   font-family: SGB;
   font-weight: 900;
@@ -154,7 +156,7 @@ header {
   width: 10rem;
 }
 #fund, #buyin {
-  width: 5rem;
+  min-width: 4rem;
 }
 
 footer {
@@ -200,12 +202,7 @@ a > div:first-child {
 
 
 
-
-
-
 @media (min-width: 1000px) {
-  
-
   footer {
     display: none;
   }
@@ -332,6 +329,17 @@ a > div:first-child {
   text-decoration: none;
   position: relative;
   width: 10rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+#aname:hover {
+  border: 1px solid rgba(100, 100, 100, 50);
+
+}
+
+#aname.active {
+  border: 1px solid rgba(100, 100, 100, 50);
 }
 
 #notify {
@@ -341,6 +349,13 @@ a > div:first-child {
   align-items: center;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+#notify:hover {
+  border: 1px solid rgba(100, 100, 100, 50);
+
 }
 
 #live {
@@ -349,6 +364,12 @@ a > div:first-child {
   padding: 0 1rem;
   margin-top: 2rem;
   font-family: SGL;
+  gap: 0.5rem;
+}
+
+#live > div:hover, #live > a:hover {
+  border: 1px solid rgba(100, 100, 100, 50);
+
 }
 
 #winnings, #winners, #practice {
@@ -360,10 +381,12 @@ a > div:first-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
   border-radius: 0.5rem;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
+  border: 1px solid black;
+
 }
 
 #amenu {
@@ -375,15 +398,18 @@ a > div:first-child {
   width: 10rem;
   position: absolute;
   top: 2rem;
-  left: 0;
+  left: -0.05rem;
   display: none;
-
+  border: 1px solid black;
+  border-top: none;
 }
 
-#amenu.visible {
+#amenu.active {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  border: 1px solid rgba(100, 100, 100, 50);
+  border-top: none;
 }
 
 #amenu > div {
@@ -402,3 +428,4 @@ a > div:first-child {
 #aname {
   font-family: SGL;
 }
+
